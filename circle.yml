@@ -1,4 +1,10 @@
+machine:
+  java:
+    version: oraclejdk8
+
+general:
+  artifacts:
+    - "target/*.jar"
 test:
-  minitest_globs:
-    - test/integration/**/*.rb
-    - test/extra-dir/**/*.rb
+  override:
+    - mvn clean install -B
