@@ -1,12 +1,10 @@
-# Configure java version for CircleCI
 machine:
-    java:
-        version: oraclejdk8
-# Configure final artifact location
+  java:
+    version: oraclejdk8
+
 general:
-    artifacts:
-        - "target/SQMovecraft.jar"
-# Tests
+  artifacts:
+    - "target/*.jar"
 test:
   override:
     - mvn clean install -B
