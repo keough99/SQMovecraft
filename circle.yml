@@ -6,3 +6,7 @@ machine:
 general:
     artifacts:
         - "target/SQMovecraft.jar"
+# Tests
+test:
+  override:
+    - mvn clean install -B
