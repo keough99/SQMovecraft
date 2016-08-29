@@ -1,1 +1,4 @@
-
+test:
+  minitest_globs:
+    - test/integration/**/*.rb
+    - test/extra-dir/**/*.rb
